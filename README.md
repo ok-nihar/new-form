@@ -2,9 +2,9 @@
 2) Then run : PHP artisan migrate
 3) Than update/ada to your config/auth file :
    'providers' => [
-        'package_users' => [ // Navi provider for your package users
+        'package_users' => [ 
         'driver' => 'eloquent',
-        'model' => Niharb\MyForm\Models\PackageUser::class, // Your package's user model
+        'model' => Niharb\MyForm\Models\PackageUser::class,
     ],
    'guards' => [
         'package_web' => [ 
