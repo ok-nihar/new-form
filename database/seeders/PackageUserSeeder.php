@@ -16,12 +16,6 @@ class PackageUserSeeder extends Seeder
     public function run()
     {
         PackageUser::create([
-            'username' => 'testuser',
-            'email' => 'test@example.com',
-            'password' => Hash::make('password'),
-        ]);
-
-        PackageUser::create([
             'username' => 'adminuser',
             'email' => 'admin@example.com',
             'password' => Hash::make('secret'),
