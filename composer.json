@@ -1,0 +1,21 @@
+{
+    "name": "niharb/my-form",
+    "description": "A Laravel package with registration, login, and a simple form.",
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Niharb\\MyForm\\": "src/",
+            "Niharb\\MyForm\\Database\\": "database/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Niharb\\MyForm\\MyFormServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
