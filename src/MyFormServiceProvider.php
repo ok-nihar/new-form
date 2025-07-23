@@ -23,19 +23,19 @@ class MyFormServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Views publish karo
+        // Views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'my-form');
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/my-form'),
         ], 'my-form-views');
 
-        // Migrations publish karo
+        // Migrations
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->publishes([
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'my-form-migrations');
 
-        // Routes load karo
+        // Routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 }
