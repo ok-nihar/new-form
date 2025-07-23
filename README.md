@@ -50,4 +50,14 @@ public function run(): void
 
 Than Run =>
     php artisan db:seed
+
+Now you have 1 User =
+    'username' => 'adminuser',
+    'email' => 'admin@example.com',
+    'password' => 'secret'
+```
+### 5. Routes
+```bash
+   Registration = /my-form/register
+   Login = /my-form/login
 ```
