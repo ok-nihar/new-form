@@ -57,6 +57,7 @@ Now you have 1 User =
     'password' => 'secret'
 ```
 ### 5. Routes
+Now you can see your Forms in
 ```bash
    Registration = /my-form/register
    Login = /my-form/login
