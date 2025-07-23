@@ -7,11 +7,11 @@ A Laravel package for form management with built-in user authentication.
 Follow these steps to install and configure the package:
 
 ### 1. Install via Composer
-```bash
+
 composer require niharb/my-form:@dev
 
 ### 2. Run Migrations
-```bash
+
 php artisan migrate
 
 ### 3. Update Auth Configuration
