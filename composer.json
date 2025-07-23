@@ -1,8 +1,14 @@
 {
     "name": "niharb/my-form",
-    "description": "A Laravel package with registration, login, and a simple form.",
+    "description": "A Laravel package with registartion and login form with database migration and seeder",
     "type": "laravel-package",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Nihar Borad",
+            "email": "niharborad217@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Niharb\\MyForm\\": "src/",

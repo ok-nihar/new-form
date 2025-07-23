@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Niharb\MyForm\Http\Controllers\FormController;
 use Niharb\MyForm\Http\Controllers\AuthController;
 
 Route::group(['prefix' => 'my-form', 'as' => 'my-form.', 'middleware' => 'web'], function () {
