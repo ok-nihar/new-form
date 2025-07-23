@@ -42,8 +42,12 @@ Modify your config/auth.php file with these settings:
 ### 4. Seed Default User
 Add the package seeder to your database/seeders/DatabaseSeeder.php:
 ```bash
+use Niharb\MyForm\Database\Seeders\PackageUserSeeder;
 public function run(): void
 {
     $this->call(PackageUserSeeder::class);
 }
+
+Than Run =>
+    php artisan db:seed
 ```
