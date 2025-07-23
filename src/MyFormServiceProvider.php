@@ -35,6 +35,11 @@ class MyFormServiceProvider extends ServiceProvider
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'my-form-migrations');
 
+        // seeders
+    $this->publishes([
+        __DIR__.'/../database/seeders' => database_path('seeders'),
+    ], 'my-form-seeders');
+
         // Routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
