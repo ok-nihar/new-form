@@ -42,15 +42,14 @@ Modify your config/auth.php file with these settings:
 ### 4. Seed Default User
 Add the package seeder to your database/seeders/DatabaseSeeder.php:
 ```bash
-use Niharb\MyForm\Database\Seeders\PackageUserSeeder;
-public function run(): void
-{
-    $this->call(PackageUserSeeder::class);
-}
+    1) run this command : php artisan vendor:publish --tag=my-form-seeders
+=> Now you have PackageUserSeeder.php in your database/seeders
 
-Than Run =>
-    php artisan db:seed
+    2) now in that file change namespace "namespace Niharb\MyForm\Database\Seeders;" to : namespace Database\Seeders;
 
+
+    3) Than Run => php artisan db:seed --class=PackageUserSeeder
+    
 Now you have 1 User =
     'username' => 'adminuser',
     'email' => 'admin@example.com',
