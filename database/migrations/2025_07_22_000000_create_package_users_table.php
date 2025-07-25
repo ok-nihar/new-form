@@ -21,7 +21,15 @@ class CreatePackageUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        // Add this in the migration:
+\DB::table('package_users')->insert([
+    'name' => 'Admin User',
+    'email' => 'admin@example.com',
+    'password' => bcrypt('secret'),
+]);
     }
+    
 
     /**
      * Reverse the migrations.
