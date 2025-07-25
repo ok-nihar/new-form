@@ -45,11 +45,7 @@ Add the package seeder to your database/seeders/DatabaseSeeder.php:
 ```bash
     1) run this command : php artisan vendor:publish --tag=my-form-seeders
 => Now you have PackageUserSeeder.php in your database/seeders
-
-    2) now in that file change namespace "namespace Niharb\MyForm\Database\Seeders;" to : namespace Database\Seeders;
-
-
-    3) Than Run => php artisan db:seed --class=PackageUserSeeder
+    2) Than Run => php artisan db:seed --class=PackageUserSeeer
     
 Now you have 1 User =
     'username' => 'adminuser',

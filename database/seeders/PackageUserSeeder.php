@@ -1,6 +1,6 @@
 <?php
 
-namespace Niharb\MyForm\Database\Seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Niharb\MyForm\Models\PackageUser;
