@@ -22,14 +22,14 @@ class CreatePackageUsersTable extends Migration
             $table->timestamps();
         });
 
-        // Add this in the migration:
-\DB::table('package_users')->insert([
-    'name' => 'Admin User',
-    'email' => 'admin@example.com',
-    'password' => bcrypt('secret'),
-]);
+        //For Default user
+        \DB::table('package_users')->insert([
+            'name' => 'Admin User',
+            'email' => 'admin@example.com',
+            'password' => bcrypt('secret'),
+        ]);
     }
-    
+
 
     /**
      * Reverse the migrations.

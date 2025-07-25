@@ -13,8 +13,13 @@ composer require niharb/my-form:@dev
 
 ### 2. Run Migrations
 ```bash
-php artisan vendor:publish --tag=my-form-migrations
 php artisan migrate
+
+Now you have tabel "package_users" and one default user
+
+    'username' => 'adminuser',
+    'email' => 'admin@example.com',
+    'password' => 'secret'
 ```
 
 ### 3. Update Auth Configuration
@@ -40,19 +45,7 @@ Modify your config/auth.php file with these settings:
     ],
 ],
 ```
-### 4. Seed Default User
-Add the package seeder to your database/seeders/DatabaseSeeder.php:
-```bash
-    1) run this command : php artisan vendor:publish --tag=my-form-seeders
-=> Now you have PackageUserSeeder.php in your database/seeders
-    2) Than Run => php artisan db:seed --class=PackageUserSeeer
-    
-Now you have 1 User =
-    'username' => 'adminuser',
-    'email' => 'admin@example.com',
-    'password' => 'secret'
-```
-### 5. Routes
+### 4. Routes
 Now you can see your Forms in
 ```bash
    Registration = /my-form/register
