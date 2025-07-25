@@ -13,6 +13,7 @@ composer require niharb/my-form:@dev
 
 ### 2. Run Migrations
 ```bash
+php artisan vendor:publish --tag=my-form-migrations
 php artisan migrate
 ```
 
