@@ -24,7 +24,7 @@ class CreatePackageUsersTable extends Migration
 
         //For Default user
         \DB::table('package_users')->insert([
-            'name' => 'Admin User',
+            'username' => 'Admin User',
             'email' => 'admin@example.com',
             'password' => bcrypt('secret'),
         ]);
